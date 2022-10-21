@@ -6,10 +6,20 @@ public class example1 {
         
         Scanner in = new Scanner(System.in);
 
-        int input;
-        input = in.nextInt();
+        String input;
+        input = in.nextLine();
 
-        System.out.println(input);
+        String[] arr = input.split(" ");
+
+        int val = Integer.parseInt(arr[0]);
+        int val2 = Integer.parseInt(arr[1]);
+
+        System.out.println(val+val2);
+        System.out.println(val-val2);
+        System.out.println(val*val2);
+        System.out.println(val+val2);
+        System.out.println(val%val2);
+
 
         in.close();
 
